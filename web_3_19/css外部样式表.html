@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 外部引用方式1 -->
+    <!-- <link rel="stylesheet" type="text/css" href="./css外部样式表.css"> -->
+    <!-- 链接的东西当成stylesheet样式表， type具体是css样式，链接文件的路径 -->
+    <!-- 外部应用方式2 -->
+    <style>
+        @import url(./css外部样式表.css);
+    </style>
+    <!-- 区别：
+    link属于XHTML标签，而@import完全是CSS提供的方式
+    加载顺序的区别；link引用的CSS会被同时加载
+                   import引用的CSS会等到页面全部被下载完再加载
+   推荐使用link标签 -->
+</head>
+<body>
+    <h1>1111</h1>
+</body>
+</html>

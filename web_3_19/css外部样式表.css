@@ -1,0 +1,6 @@
+div{
+    color: blue;
+    /* 哪个加上!important；优先级就最高 */
+    background-color: darkcyan;
+    /* 背景颜色 */
+}
