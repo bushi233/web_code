@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #iddiv{
+                background-color:blue;
+        }
+        div{
+            background-color:yellow;
+        }
+        .cdiv{
+            background-color:red;
+        }
+        p{
+            background-color:aqua;
+        }
+        div p{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- 多个选择器，选中同一个元素，
+    且都为他们定义了样式，如果属性发生重提，
+    会选择权重高的来执行 -->
+    <!-- 选择器：
+        id>class>元素>后代（后代权重之和） -->
+    <div class="cdiv" id="iddiv" style="background-color:darkred;">111111111111111111
+        <p>222222222222</p>
+    </div>
+    <p>33333333333</p>
+</body>
+</html>
