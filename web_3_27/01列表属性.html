@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: disc;
+            /* 控制列表前面的样式 */
+            /* disc 实心圆
+            circle 空心圆
+            square  实心方块
+            none 不显示东西 */
+            /* list-style-image: 图片; */
+            /* 用图片代替原本的样式
+            不一样的图片要用选择器链接 */
+            list-style-position: outside;
+                /* 列表标记的放置位置
+            outside 外面
+            inside 里面  */
+
+        }
+        .box{
+            /* 复合属性 */
+            list-style:circle inside;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="box">111</li>
+        <li>2222</li>
+        <li>333333</li>
+    </ul>
+</body>
+</html>
